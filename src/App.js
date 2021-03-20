@@ -1,9 +1,10 @@
 import Profile from "./components/Profile";
 import StatisticsList from "./components/StatisticsList";
-// import FriendsList from "./components/FriendsList";
+import FriendsList from "./components/FriendsList";
 // import Transactions from "./components/Transactions";
 import user from "./json/user.json";
 import statistics from "./json/statistical-data.json";
+import friends from "./json/friends.json";
 
 const App = () => {
   return (
@@ -16,9 +17,9 @@ const App = () => {
         stats={user.stats}
       />
       <StatisticsList title="Upload stats" stats={statistics} />
-      
-      {/* <FriendsList />
-      <Transactions /> */}
+
+      <FriendsList friends={friends} />
+      {/* <Transactions /> */}
     </>
   );
 };
