@@ -1,8 +1,9 @@
 import Profile from "./components/Profile";
-// import Statistic from "./components/Statistic";
+import StatisticsList from "./components/StatisticsList";
 // import FriendsList from "./components/FriendsList";
 // import Transactions from "./components/Transactions";
-import user from "./user.json";
+import user from "./json/user.json";
+import statistics from "./json/statistical-data.json";
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      {/* <Statistic />
-      <FriendsList />
+      <StatisticsList title="Upload stats" stats={statistics} />
+      
+      {/* <FriendsList />
       <Transactions /> */}
     </>
   );
