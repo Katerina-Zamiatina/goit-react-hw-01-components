@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import defImg from "./default.jpeg";
 
-const Friends = ({ url, name, isOnline }) => (
+const Friend = ({ url, name, isOnline }) => (
   <>
     <span className="status">{isOnline}</span>
     <img src={url} alt={name} className="avatar" width="48" />
@@ -9,14 +9,14 @@ const Friends = ({ url, name, isOnline }) => (
   </>
 );
 
-Friends.defaultProps = {
+Friend.defaultProps = {
   url: defImg,
 };
 
-Friends.propTypes = {
+Friend.propTypes = {
   url: PropTypes.string,
   isOnline: PropTypes.bool.isRequired,
   name: PropTypes.string.isRequired,
 };
 
-export default Friends;
+export default Friend;

@@ -15,8 +15,12 @@ const StatisticsList = ({ stats, title }) => (
 );
 
 StatisticsList.propTypes = {
-  stats: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string.isRequired }))
-    .isRequired,
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default StatisticsList;
