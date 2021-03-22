@@ -1,19 +1,14 @@
 import PropTypes from 'prop-types';
+import styles from './Friends.module.css';
 import Friend from './Friend';
 
 const FriendsList = ({ friends }) => (
-  <ul className="friend-list">
+  <ul className={styles.list}>
     {friends.map(({ id, avatar, name, isOnline }) => (
-      <li className="item" key={id}>
-        <Friend url={avatar} name={name} isOnline={isOnline} />
-      </li>
+      <Friend key={id} url={avatar} name={name} isOnline={isOnline} />
     ))}
   </ul>
 );
-
-FriendsList.defaultProps = {
-  type: true,
-};
 
 FriendsList.propTypes = {
   friends: PropTypes.arrayOf(
