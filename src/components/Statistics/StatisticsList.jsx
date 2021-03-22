@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import Statistics from "./Statistics";
+import PropTypes from 'prop-types';
+import Statistics from './Statistics';
 
 const StatisticsList = ({ stats, title }) => (
   <section className="statistics">
@@ -19,7 +19,7 @@ StatisticsList.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-    })
+    }),
   ).isRequired,
 };
 

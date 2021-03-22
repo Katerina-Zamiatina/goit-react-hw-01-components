@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import Transaction from "./Transaction";
+import PropTypes from 'prop-types';
+import Transaction from './Transaction';
 
 const TransactionsHistory = ({ items }) => (
   <table className="transaction-history">
