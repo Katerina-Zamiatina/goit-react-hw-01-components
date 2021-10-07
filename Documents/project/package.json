@@ -1,0 +1,17 @@
+{
+  "name": "eslint_config",
+  "version": "1.0.0",
+  "description": "this is eslint config file",
+  "main": "hm1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kate zamiatina",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
